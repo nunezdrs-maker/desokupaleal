@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
+      // Alias for Figma-exported assets that use figma:asset/... import syntax
       'figma:asset': '/assets'
     }
   },
