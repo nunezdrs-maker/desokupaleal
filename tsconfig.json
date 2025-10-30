@@ -19,6 +19,6 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src", "App.tsx", "components", "utils"],
+  "include": ["src", "App.tsx", "components", "utils", "types.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

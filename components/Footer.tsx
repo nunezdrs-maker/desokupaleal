@@ -1,5 +1,5 @@
 import { Mail, Phone, MapPin, ChevronRight } from "lucide-react";
-import logo from "figma:asset/2b8bb7dcc03ee542cf1a9d8448c5a59fffed45d6.png";
+import logo from "../assets/2b8bb7dcc03ee542cf1a9d8448c5a59fffed45d6.png";
 
 export function Footer() {
   const scrollToBooking = () => {
