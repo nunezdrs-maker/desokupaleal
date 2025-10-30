@@ -2,22 +2,22 @@
 FROM node:20.18.0-slim AS build
 WORKDIR /app
 
-# Install build tools first (needed for native dependencies during npm ci)
+# Install build tools and yarn
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y build-essential node-gyp pkg-config python-is-python3 && \
+    apt-get install --no-install-recommends -y build-essential node-gyp pkg-config python-is-python3 yarn && \
     rm -rf /var/lib/apt/lists/*
 
-# Copy package.json and package-lock.json (if present) for deterministic install
-COPY package*.json ./
+# Copy package files for installation
+COPY package*.json yarn.lock* ./
 
-# Deterministic install using lockfile if present
-RUN npm ci --include=dev
+# Install dependencies with yarn (more reliable than npm in Docker)
+RUN yarn install --frozen-lockfile || yarn install
 
 # Copy rest of the source
 COPY . .
 
 # Build Vite app
-RUN npm run build
+RUN yarn build
 
 # Final stage: serve with nginx
 FROM nginx:latest AS runner
