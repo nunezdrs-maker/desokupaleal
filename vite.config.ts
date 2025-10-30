@@ -4,9 +4,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    alias: {
-      './': '/src/'
-    }
+    alias: {}
   },
   build: {
     outDir: 'dist',
@@ -24,7 +22,7 @@ export default defineConfig({
         manualChunks: {
           'react-vendor': ['react', 'react-dom'],
           'ui-components': ['lucide-react'],
-          'calendar': ['react-calendar'],
+          'calendar': ['react-day-picker'],
           'pdf': ['jspdf']
         }
       }

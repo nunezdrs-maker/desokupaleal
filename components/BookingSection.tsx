@@ -5,8 +5,8 @@ import { Label } from "./ui/label";
 import { Textarea } from "./ui/textarea";
 import { Calendar } from "./ui/calendar";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
-import { Phone, Mail, Clock, MapPin } from "lucide-react";
-import { toast } from "sonner@2.0.3";
+import { Phone, Mail, Clock } from "lucide-react";
+import { toast } from "sonner";
 import { projectId, publicAnonKey } from "../utils/supabase/info";
 
 export function BookingSection() {
