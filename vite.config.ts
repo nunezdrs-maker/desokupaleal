@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      './': '/src/'
+      'figma:asset': '/assets'
     }
   },
   build: {
