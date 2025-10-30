@@ -1,10 +1,10 @@
 import { Button } from "./ui/button";
 import { Shield, Phone, Play } from "lucide-react";
-import logo from "figma:asset/2b8bb7dcc03ee542cf1a9d8448c5a59fffed45d6.png";
-import heroImage1 from "figma:asset/01582eaa907bcef3e926722dd88ca6521dd03ed1.png";
-import heroImage2 from "figma:asset/ba655dcbb89b3ac706a4880cddd2f7f762f7a90e.png";
-import heroImage3 from "figma:asset/322bfb0504c616fe544d06622193feff5a310789.png";
-import heroImage4 from "figma:asset/dca04aefb92dbd1752f2cc5f8631b362920356aa.png";
+import logo from "../assets/2b8bb7dcc03ee542cf1a9d8448c5a59fffed45d6.png";
+import heroImage1 from "../assets/01582eaa907bcef3e926722dd88ca6521dd03ed1.png";
+import heroImage2 from "../assets/ba655dcbb89b3ac706a4880cddd2f7f762f7a90e.png";
+import heroImage3 from "../assets/322bfb0504c616fe544d06622193feff5a310789.png";
+import heroImage4 from "../assets/dca04aefb92dbd1752f2cc5f8631b362920356aa.png";
 import { useState, useEffect } from "react";
 
 export function Hero() {

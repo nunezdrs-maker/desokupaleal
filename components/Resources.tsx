@@ -1,6 +1,6 @@
 import { Button } from "./ui/button";
-import { FileText, Download, ExternalLink } from "lucide-react";
-import { toast } from "sonner@2.0.3";
+import { Download, ExternalLink } from "lucide-react";
+import { toast } from "sonner";
 
 export function Resources() {
   const generateGuiaLegalPDF = async () => {

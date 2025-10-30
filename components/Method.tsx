@@ -1,5 +1,5 @@
 import { Search, Users, Scale, Key } from "lucide-react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 export function Method() {
   const steps = [
